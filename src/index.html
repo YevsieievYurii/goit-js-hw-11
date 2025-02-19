@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-<header>
+<!-- <header> -->
   <form id="search-form">
-    <input type="text" name="searchQuery" autocomplete="off" placeholder="Пошук зображень..."/>
-    <button type="submit">🔍 Пошук</button>
+    <!-- <input type="text" name="searchQuery" autocomplete="off" placeholder="Пошук зображень..."/> -->
+    <input type="text" class="search-input" placeholder="Search for images..." />
+    <button type="submit">Search</button>
   </form>
-</header>
-    <main>
+<!-- </header> -->
+    <!-- <main> -->
+      <div class="loading hidden">Loading...</div>
       <div class="gallery"></div>
-    </main>
+    <!-- </main> -->
 
     <script type="module" src="./main.js"></script>
   </body>
