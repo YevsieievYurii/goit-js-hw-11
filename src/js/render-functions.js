@@ -23,17 +23,17 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 // Відображаємо картки зображень
 export function renderImageGallery(images) {
-  const gallery = document.querySelector('.gallery');
+const gallery = document.querySelector('.gallery');
   gallery.innerHTML = ''; // очищуємо галерею перед додаванням нових елементів
 
-  images.forEach(image => {
+images.forEach(image => {
     const imgCard = `
-      <a href="${image.largeImageURL}" class="gallery__item">
+    <a href="${image.largeImageURL}" class="gallery__item">
         <img src="${image.webformatURL}" alt="${image.tags}" class="gallery__image" />
-      </a>
+    </a>
     `;
     gallery.insertAdjacentHTML('beforeend', imgCard);
-  });
+});
 
   // Оновлюємо бібліотеку SimpleLightbox
   const lightbox = new SimpleLightbox('.gallery a');
